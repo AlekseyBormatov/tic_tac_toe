@@ -1,14 +1,15 @@
 from gameparts import Board
 
-# Всё, что ниже этой инструкции, не будет импортироваться,
-# но будет выполняться при запуске файла game.py.
 def main():
     game = Board()
     game.display()
-    game.make_move(1, 1, 'X')
+    # Тут пользователь вводит координаты ячейки.
+    row = int(input('Введите номер строки: '))
+    column = int(input('Введите номер столбца: '))
+    # В метод make_move передаются те координаты, которые ввёл пользователь.
+    game.make_move(row, column, 'X')
     print('Ход сделан!')
     game.display()
 
-# А вот вызов этой функции.
 if __name__ == '__main__':
-    main()
+    main() 
