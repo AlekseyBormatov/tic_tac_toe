@@ -1,5 +1,5 @@
 # Объявить класс. game.py
-from parts import Board
+from gameparts.parts import Board
 
 # Создать игровое поле - объект класса Board.
 game = Board()
