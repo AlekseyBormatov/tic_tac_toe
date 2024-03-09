@@ -28,7 +28,7 @@ class Board:
         # Иначе - ничья!
         return True
 
-     def check_win(self, player):
+    def check_win(self, player):
         # Тут реализована проверка по вертикали и горизонтали.
         for i in range(3):
             if (all([self.board[i][j] == player for j in range(3)]) or
